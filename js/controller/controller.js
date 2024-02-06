@@ -78,7 +78,7 @@ export function drawer(geojson) {
                 
                 return new ol.style.Style({
                     stroke: new ol.style.Stroke({
-                        color: 'red', 
+                        color: 'orange', 
                         width: 3
                     })
                 });
@@ -124,7 +124,7 @@ export function AddLayerToMAP(geojson){
         source: Sourcedata,
         style: new ol.style.Style({
             image: new ol.style.Icon({
-                src: 'img/icog.png', 
+                src: 'img/lokasi.png', 
                 scale: 0.5, 
                 opacity: 1
             })
@@ -146,7 +146,7 @@ export function AddLayerToMAP(geojson){
                 
                 return new ol.style.Style({
                     stroke: new ol.style.Stroke({
-                        color: 'red', 
+                        color: '#FC6736', 
                         width: 3
                     })
                 });
