@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css" type="text/css"/>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/node_modules/ol/ol.css"> -->
+    <title>Tugas Sistem Informasi Geografis
+    </title>
+</head>
+<body>
+    <!-- component -->
+<nav class="flex justify-between px-20 py-10 items-center bg-white">
+    <h1 class="text-xl text-gray-800 font-bold">GIS Learning</h1>
+    <div class="flex items-center">
+      <div class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 pt-0.5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+        <input class="ml-2 outline-none bg-transparent font-" type="text" name="search" id="search" placeholder="Search..." />
+      </div>
+      <ul class="flex items-center space-x-6">
+
+
+        <a href="index.html"> <li class="font-semibold text-gray-700">Home</li></a>
+        <a href="login.html"> <li class="font-semibold text-gray-700">Login</li></a>
+        <a href="register.html"><li class="font-semibold text-gray-700">Register</li></a>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M12 14l9-5-9-5-9 5 9 5z" />
+            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+          </svg>
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+          </svg>
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <div class="flex items-center justify-center h-screen">
+    <div class="mt-8 flex justify-center space-x-8">
+      <div class="relative w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+        <div class="relative mx-4 mt-4 h-80 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+          <img src="https://www.gstatic.com/webp/gallery/2.jpg" alt="profile-picture" />
+        </div>
+        <div class="p-6 text-center">
+          <h4 class="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+            Geographic Information System
+          </h4>
+          <h2 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+            NPM: 1214015
+          </h2>
+          <h2 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+            Nama : Daffa Audya
+          </h2>
+          <h2 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+            Kelas : 14-21-01
+          </h2>
+          <h2 class="block bg-gradient-to-tr from-pink-600 to-pink-400 bg-clip-text font-sans text-base font-medium leading-relaxed text-transparent antialiased">
+            Chapter 4 POST API Google Cloud Function
+          </h2>
+        </div>
+        <div class="flex justify-center gap-7 p-6 pt-2">
+          <a
+            href="#facebook"
+            class="block bg-gradient-to-tr from-blue-600 to-blue-400 bg-clip-text font-sans text-xl font-normal leading-relaxed text-transparent antialiased"
+          >
+            <i class="fab fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a
+            href="#twitter"
+            class="block bg-gradient-to-tr from-light-blue-600 to-light-blue-400 bg-clip-text font-sans text-xl font-normal leading-relaxed text-transparent antialiased"
+          >
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a
+            href="#instagram"
+            class="block bg-gradient-to-tr from-purple-600 to-purple-400 bg-clip-text font-sans text-xl font-normal leading-relaxed text-transparent antialiased"
+          >
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+  
+      <div class="relative w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+        <div class="text-center">
+          <h2 class="text-4xl font-bold text-center text-gray-700 dark:text-white"></h2>
+          <p class="mt-3 text-gray-500 dark:text-gray-300">Masuk untuk mengakses Post GeoSpasial</p>
+        </div>
+        <div class="mt-8">
+          <form id="formlogin">
+            <div>
+              <label for="username" class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Username</label>
+              <input type="text" name="username" id="username" value="" placeholder="Username"
+                class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+            </div>
+            <div class="mt-6">
+              <div class="flex justify-between mb-2">
+                <label for="password" class="text-sm text-gray-600 dark-text-gray-200">Kata Sandi</label>
+                <a href="register.html"
+                  class="text-sm text-gray-400 focus:text-blue-500 hover:text-blue-500 hover:underline">Belum Punya Akun? Register</a>
+              </div>
+              <input type="password" name="password" id="password" value="" placeholder="Password"
+                class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+            </div>
+            <input type="role" name="role" id="role" hidden value="user" />
+            <div class="mt-6">
+              <button type="submit"
+                class="button w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:bg-blue-400 focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                Masuk
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+<script type="module" src="/js/login.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/ol@v8.1.0/dist/ol.js"></script>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>
