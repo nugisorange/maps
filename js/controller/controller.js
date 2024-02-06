@@ -146,7 +146,7 @@ export function AddLayerToMAP(geojson){
                 
                 return new ol.style.Style({
                     stroke: new ol.style.Stroke({
-                        color: '#FDE767', 
+                        color: 'yellow', 
                         width: 3
                     })
                 });
